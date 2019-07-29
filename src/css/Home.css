@@ -1,4 +1,10 @@
-body {
-    background: url('../assets/images/lake.jpg');
+body{
+    background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.267),
+        rgba(0, 0, 0, 0.267)  
+    ),
+    
+    url('../assets/images/lake.jpg');
     background-size: cover;
 }
