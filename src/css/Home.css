@@ -1,3 +1,4 @@
+
 #home-container{
     background:
     linear-gradient(
@@ -8,13 +9,13 @@
     url('../assets/images/lake.jpg');
     background-size: cover;
     height: 100vh;
-    color: white;    
+    color: white;  
+    padding-top: 200px;
 }
 
 .home-title{
-    font-weight: bolder !important;
-    font-size: 50px;
-    
+    font-weight: 700 !important;
+    font-size: 50px;    
 }
 
 .home-info{
@@ -22,10 +23,4 @@
     margin: auto;
 }
 
-#about-container{
-    color:black;
-}
 
-.main-container{
-    
-}

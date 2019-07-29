@@ -1,0 +1,26 @@
+.about-container{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    
+}
+
+.icon{
+    background-color: #eee;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    color: #007bff;
+}
+
+.icon i{
+    line-height: 2;
+}
+
+.icon:hover{
+    transition: ease-in-out .2s;
+    background-color: #007bff;
+    color: white;
+}
+
+

@@ -1,8 +1,9 @@
 .navbar{
     padding: 1% 10% 0 10% !important;
-    background: black; 
-  
+    position: fixed !important;
+    width: 100%;
 }
+
 
 
 .inactive{
