@@ -1,0 +1,45 @@
+.navbar{
+    padding: 1% 10% 0 10% !important;
+    background: black; 
+  
+}
+
+
+.inactive{
+    color: white;
+}
+
+.inactive:hover{
+    color:rgb(212, 212, 212);
+}
+
+.active{
+    color: #007bff !important;
+}
+
+
+
+
+/* ******** Responsive Styles *********/
+@media (max-width: 767px){
+    .nav{
+         display: block !important;
+     }
+ 
+     .navbar h5{
+         font-size: 20px;
+         text-align: left;
+     }
+ 
+ 
+ 
+ }
+ 
+ 
+ @media (max-width: 575.98px){
+     .navbar h5{
+          font-size: 15px;
+      }
+  
+  }
+ 

@@ -11,6 +11,7 @@ import {
 import '../css/Navbar.css'
 import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
+import { scroller} from 'react-scroll'
 
 
 class Navbar extends React.Component {
@@ -30,10 +31,23 @@ class Navbar extends React.Component {
         });
     }
 
+
+
+
+    scrollTo() {
+        scroller.scrollTo('about-container', {
+          duration: 1000,
+          delay: 100,
+          smooth: 'easeInOutQuart'
+        })
+      }
+
+
+
     render() {
         return (
-            <Navigation light expand="md">
-                <NavbarBrand href="/">SeeMe</NavbarBrand>
+            <Navigation dark expand="md">
+                <NavbarBrand href="/"><h3>SeeMe</h3></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
 
                 <Collapse isOpen={this.state.isOpen} navbar>
@@ -44,27 +58,24 @@ class Navbar extends React.Component {
 
 
                         <NavItem>
-                            <NavLink tag={Link} to="/" className="inactive" activeClassName="active">
-                                <h3>Home</h3>
+                            <NavLink tag={Link} exact to="/" className="inactive" activeClassName="active">
+                                <h5>Home</h5>
                             </NavLink>
 
                         </NavItem>
 
 
                         <NavItem>
-                            <NavLink tag={Link} exact to="/about" className="inactive" activeClassName="active">
-                                <h3>About</h3>
+                            <NavLink tag={Link} to="/about" onClick={() => this.scrollTo()} className="inactive" activeClassName="active">
+                                <h5>About</h5>
                             </NavLink>
                         </NavItem>
-
-
-
 
 
 
                         <NavItem>
                             <NavLink tag={Link} to="/signup" className="inactive" activeClassName="active">
-                                <h3>Signup</h3>
+                                <h5>Signup</h5>
                             </NavLink>
                         </NavItem>
 

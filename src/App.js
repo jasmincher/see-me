@@ -9,15 +9,17 @@ import NotFound from './pages/NotFound'
 import { Route, Switch} from 'react-router-dom';
 
 
+
 function App() {
+ 
   return (
     <div className="App">
-     <Navbar/>
 
+     <Navbar/>
      <Switch>
       
-       <Route exact path="/" component={Home} />
-       <Route path="/about" component={About}/>
+       <Route exact path={["/", "/about"]} component={Home} />
+       {/* <Route path="/about" component={About}/> */}
        <Route path="/signup" component={Signup} />
        <Route component={NotFound} />
 
