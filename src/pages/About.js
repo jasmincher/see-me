@@ -16,7 +16,7 @@ function About() {
       </Row>
 
 
-      <Row>
+      <Row className="reasons-container">
         <Col lg="3">
           <div className="icon">
             <i className="fas fa-user-friends fa-3x" ></i>
