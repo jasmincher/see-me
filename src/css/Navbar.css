@@ -1,9 +1,16 @@
 .navbar{
     padding: 1% 10% 0 10% !important;
-    position: fixed !important;
+    position: static;
     width: 100%;
 }
 
+nav{
+    z-index: 1000;
+}
+
+.navbar-scroll{
+    background: white;
+}
 
 
 .inactive{
@@ -32,6 +39,11 @@
          text-align: left;
      }
  
+     .navbar-collapse{
+         background: black;
+         position: relative !important;
+         z-index: 10000 !important;
+     }
  
  
  }

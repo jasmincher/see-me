@@ -1,13 +1,14 @@
 import React from 'react';
 import '../css/Home.css'
 import About from './About';
-import { Col } from 'reactstrap'
+import { Col, Button } from 'reactstrap'
 
 
 
 class Home extends React.Component {
 
     render() {
+
         return (
 
             <div className="main-container">
@@ -20,6 +21,8 @@ class Home extends React.Component {
                         <p className="home-info">
                             A place where you can connect to therapists and sponsors whenever in crisis. 24/7 you'll be able to contact and meet up with them.
                         </p>
+
+                        <Button color="primary">SEARCH NOW</Button>
                     </Col>
 
                 </div>

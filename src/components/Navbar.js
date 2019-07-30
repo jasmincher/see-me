@@ -13,6 +13,8 @@ import React from 'react';
 import { NavLink as Link } from 'react-router-dom';
 import { scroller} from 'react-scroll'
 
+import { withRouter } from 'react-router'
+
 
 class Navbar extends React.Component {
 
@@ -34,7 +36,7 @@ class Navbar extends React.Component {
 
 
 
-    scrollTo() {
+    scrollToAbout() {
         scroller.scrollTo('about-container', {
           duration: 1000,
           delay: 100,
@@ -42,11 +44,24 @@ class Navbar extends React.Component {
         })
       }
 
+      scrollToHome() {
+        scroller.scrollTo('home-container', {
+          duration: 1000,
+          delay: 100,
+          smooth: 'easeInOutQuart'
+        })
+      }
+
+      
+      
+      render() {
+
+        const { location } = this.props;
+        const navbarColor = location.pathname === '/signup' ? {background: 'black'} : { background: 'transparent', position: 'fixed' }
 
 
-    render() {
         return (
-            <Navigation dark expand="md">
+            <Navigation dark expand="md" style={navbarColor}>
                 <NavbarBrand href="/"><h3>SeeMe</h3></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
 
@@ -58,7 +73,7 @@ class Navbar extends React.Component {
 
 
                         <NavItem>
-                            <NavLink tag={Link} exact to="/" className="inactive" activeClassName="active">
+                            <NavLink tag={Link} exact to="/" onClick={() => this.scrollToHome()} className="inactive" activeClassName="active">
                                 <h5>Home</h5>
                             </NavLink>
 
@@ -66,7 +81,7 @@ class Navbar extends React.Component {
 
 
                         <NavItem>
-                            <NavLink tag={Link} to="/about" onClick={() => this.scrollTo()} className="inactive" activeClassName="active">
+                            <NavLink tag={Link} to="/about" onClick={() => this.scrollToAbout()} className="inactive" activeClassName="active">
                                 <h5>About</h5>
                             </NavLink>
                         </NavItem>
@@ -88,4 +103,4 @@ class Navbar extends React.Component {
     }
 }
 
-export default Navbar;
+export default withRouter(Navbar);
