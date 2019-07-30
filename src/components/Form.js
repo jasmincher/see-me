@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form as SignupForm, FormGroup, Label, Input, Row } from 'reactstrap';
+import { Button, Form as SignupForm, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import '../css/Form.css'
 
 
@@ -13,8 +13,10 @@ class Form extends React.Component {
             labels.map(i =>
 
                 <FormGroup row>
-                    <Label className="form-title">{i.title}</Label>
+                    <Label className="form-label">{i.title}</Label>
+
                     <Input className="form-input" type={i.type ? i.type : "text"} id={i.id} placeholder={i.placeholder} />
+           
                 </FormGroup>
             )
         )

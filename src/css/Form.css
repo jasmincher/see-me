@@ -3,3 +3,8 @@
     text-align: left;
     font-weight: 700;
 }
+
+.form-input{
+    border: pink 1px solid !important;
+    
+}
