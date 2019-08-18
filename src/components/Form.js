@@ -16,7 +16,7 @@ class Form extends React.Component {
                     <Label className="form-label">{i.title}</Label>
 
                     <Input className="form-input" type={i.type ? i.type : "text"} id={i.id} placeholder={i.placeholder} />
-           
+                    <span class="focus-border"></span>
                 </FormGroup>
             )
         )

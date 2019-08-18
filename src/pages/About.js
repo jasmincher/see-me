@@ -7,7 +7,7 @@ function About() {
     <Container className="about-container">
 
 
-      <Row>
+      <Row style={{marginBottom: '50px'}}>
         <Col lg="12">
 
           <h1>Why choose SeeMe?</h1>
@@ -16,7 +16,7 @@ function About() {
       </Row>
 
 
-      <Row className="reasons-container">
+      <Row>
         <Col lg="3">
           <div className="icon">
             <i className="fas fa-user-friends fa-3x" ></i>
