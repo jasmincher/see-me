@@ -7,6 +7,16 @@ import { Col, Button } from 'reactstrap'
 
 class Home extends React.Component {
 
+    componentDidMount(){
+        const script = document.createElement("script");
+        script.src = "https://static.landbot.io/landbot-widget/landbot-widget-1.0.0.js";
+        script.async = true;
+        script.htmlFor = "https://landbot.io/u/H-174683-NSTNWKIEPS3Z3RCV/index.html"
+
+        document.body.appendChild(script);
+    }
+
+
     render() {
 
         return (
@@ -30,6 +40,11 @@ class Home extends React.Component {
                 <div name="about-container">
                     <About />
                 </div>
+
+
+
+
+
 
             </div>
 
