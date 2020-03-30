@@ -5,47 +5,29 @@
 }
 
 .form-input{
-    border: transparent 1px solid !important;
-    border-bottom: 2px solid !important;
+    border: transparent 0 !important;
     border-radius: 0 !important;    
-
-
+    border-bottom: 2px solid !important;
     
 }
 
 
-
-
-input .form-control{
-    border: 0;
-    padding: 7px 0;
-    border-bottom: 1px solid #7cc;
+#signup{
+    background: rgb(220, 220, 220);
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin: 10px 10px;
 }
 
+#signin{
+    background:none;
+    border: 0px;
+    border-radius: 4px;
+    padding: 10px 25px;
+    margin: 10px 10px;
+}
 
-/* input:focus{
-    transition: all .4s;
-    width: 100%;
-    border-bottom: 2px red solid !important;
-
-} */
-
-
-input .form-control ~ .focus-border {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ac2753;
-    transition: 0.4s;
-  }
-
-
-
-  input .form-control:focus ~ .focus-border {
-    width: 100%;
-    transition: 0.4s;
-  }
-  
-
+#signin:hover{
+    color: #007bff;
+}

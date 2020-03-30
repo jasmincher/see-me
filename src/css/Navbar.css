@@ -1,7 +1,7 @@
 .navbar{
-    padding: 1% 10% 0 10% !important;
     position: static;
     width: 100%;
+    padding: 10px 0 !important;
 }
 
 nav{

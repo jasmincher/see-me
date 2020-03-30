@@ -34,8 +34,6 @@ class Navbar extends React.Component {
     }
 
 
-
-
     scrollToAbout() {
         scroller.scrollTo('about-container', {
           duration: 1000,
@@ -52,7 +50,8 @@ class Navbar extends React.Component {
         })
       }
 
-      
+
+     
       
       render() {
 
@@ -62,7 +61,7 @@ class Navbar extends React.Component {
 
         return (
             <Navigation dark expand="md" style={navbarColor}>
-                <NavbarBrand href="/"><h3>SeeMe</h3></NavbarBrand>
+                <NavbarBrand href="/" style={{padding: '0 20px'}}><h3>SeeMe</h3></NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
 
                 <Collapse isOpen={this.state.isOpen} navbar>

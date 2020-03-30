@@ -3,7 +3,10 @@ import { Row, Col, Container } from 'reactstrap'
 import Form from '../components/Form'
 import '../css/Signup.css'
 
-const Labels = [{ title: 'Full Name', id: 'name', placeholder: 'Name' }, { title: 'Email', id: 'email', placeholder: 'Email address', type: 'email' }, { title: 'Username', id: 'username', placeholder: "Username" }, { title: 'Password', id: 'password', placeholder: '******', type: 'password' }, { title: 'Repeat Password', id: 'repassword', placeholder: '******' }];
+const signup = [{ title: 'Full Name', id: 'name', placeholder: 'Name' }, { title: 'Email', id: 'email', placeholder: 'Email address', type: 'email' }, { title: 'Username', id: 'username', placeholder: "Username" }, { title: 'Password', id: 'password', placeholder: '*********', type: 'password' }, { title: 'Repeat Password', id: 'repassword', placeholder: '*********' }];
+
+const signin = [{ title: 'Username', id: 'username', placeholder: "Username" }, { title: 'Password', id: 'password', placeholder: '******', type: 'password' }];
+
 
 
 function Signup() {
@@ -22,8 +25,10 @@ function Signup() {
         </Col>
 
 
-        <Col lg="4" style={{padding: '40px'}} >
-          <Form title="Sign Up" labels={Labels} />
+        <Col lg="4" style={{padding: '40px 40px 10px 40px'}} >
+
+          {/* add condition to render form depending on if it is signup or sign */}
+          <Form title="Sign Up" labels={signup} />
         </Col>
 
       </Row>

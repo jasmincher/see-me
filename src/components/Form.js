@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form as SignupForm, FormGroup, Label, Input, Row, Col } from 'reactstrap';
+import { Form as SignupForm, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import '../css/Form.css'
 
 
@@ -42,13 +42,9 @@ class Form extends React.Component {
                     </FormGroup>
                 </Row>
 
-                <Row>
-
-
-                    <Button size="lg" className="signup-button">Sign Up</Button>
-                    <Button size="lg" className="signin-button">Sign In</Button>
-
-
+                <Row style={{justifyContent: 'center'}}>
+                    <button id="signup"> Sign Up</button>
+                    <button id="signin"> Sign In <i className="fas fa-long-arrow-alt-right" style={{paddingLeft: '5px'}}></i> </button>
                 </Row>
 
             </SignupForm>
