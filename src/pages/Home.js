@@ -7,7 +7,6 @@ import { Col, Button } from 'reactstrap'
 
 class Home extends React.Component {
 
-
     render() {
         return (
 

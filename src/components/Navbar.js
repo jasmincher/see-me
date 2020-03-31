@@ -65,14 +65,14 @@ class Navbar extends React.Component {
         : { background: this.state.color, position: "fixed" };
 
     return (
-      <Navigation dark expand="md" style={navbarColor} id="nav">
-        <NavbarBrand href="/" style={{ padding: "0 20px" }}>
+      <Navigation dark expand="md" style={navbarColor} >
+        <NavbarBrand href="/">
           <h3>SeeMe</h3>
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
 
         <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className="ml-auto">
+          <Nav className="ml-auto" >
             <NavItem>
               <NavLink
                 tag={Link}

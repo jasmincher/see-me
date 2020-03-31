@@ -1,7 +1,7 @@
 .navbar{
     position: static;
     width: 100%;
-    padding: 10px 0 !important;
+    padding: 10px 30px !important;
 }
 
 nav{
@@ -37,6 +37,10 @@ nav{
      .navbar h5{
          font-size: 20px;
          text-align: left;
+     }
+
+     .navbar{
+         background: black !important;
      }
  
      .navbar-collapse{
