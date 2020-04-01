@@ -30,7 +30,6 @@ function Signup() {
       </Row>
     </div>
 
-
   );
 }
 
