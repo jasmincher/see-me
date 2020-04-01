@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Container } from 'reactstrap'
+import { Row, Col } from 'reactstrap'
 import Form from '../components/Form'
 import '../css/Signup.css'
 

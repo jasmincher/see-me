@@ -4,8 +4,7 @@ import {
   FormGroup,
   Label,
   Input,
-  Row,
-  Col
+  Row
 } from "reactstrap";
 import "../css/Form.css";
 import { Link } from "react-router-dom";
