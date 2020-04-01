@@ -60,7 +60,7 @@ class Navbar extends React.Component {
     const { location } = this.props;
 
     const navbarColor =
-      location.pathname === "/signup"
+      location.pathname === "/signup" || location.pathname === "/signin"
         ? { background: "black" }
         : { background: this.state.color, position: "fixed" };
 
