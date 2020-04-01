@@ -20,7 +20,6 @@ function Signup() {
           </div>
         </Col>
 
-
         <Col lg="4" style={{padding: '40px 40px 10px 40px'}} >
 
           {/* add condition to render form depending on if it is signup or sign */}
