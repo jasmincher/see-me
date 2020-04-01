@@ -1,11 +1,10 @@
 .form-title{
-    margin-top: 20px;
     text-align: left;
     font-weight: 700;
 }
 
 .form-input{
-    border: transparent 0 !important;
+    border: none !important;
     border-radius: 0 !important;    
     border-bottom: 2px solid !important;
     
@@ -20,6 +19,12 @@
     margin: 10px 0px;
 }
 
-#signin:hover{
-    color: #007bff;
+form .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.form-control:focus{
+    box-shadow: none !important;
+    border-bottom: #007bff 2px solid !important;
 }
