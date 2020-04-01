@@ -6,3 +6,8 @@
     padding: 30% 0 20% 0;
     height: 100%;
 }
+
+.register-container > .row{
+    height: 90vh;
+   
+}

@@ -38,7 +38,7 @@ class Form extends React.Component {
         {this.renderLabels(this.props.labels)}
 
         <Row style={{ justifyContent: "center" }}>
-          <button id="signup">
+          <button id="register-btn">
             {this.props.button}
             <i
               className="fas fa-long-arrow-alt-right"
@@ -47,9 +47,9 @@ class Form extends React.Component {
           </button>
         </Row>
 
-        <Row>
-          <p>{this.props.question}</p>
-          <Link to={this.props.to}>{this.props.linkto}</Link>
+        <Row style={{ justifyContent: "center" }}>
+          <p className="question">{this.props.question}</p>
+          <Link style={{marginLeft: '5px'}}to={this.props.to}>{this.props.linkto}</Link>
         </Row>
       </SignupForm>
     );

@@ -11,21 +11,13 @@
     
 }
 
-
-#signup{
-    background: rgb(220, 220, 220);
+#register-btn{
+    background:  rgb(220, 220, 220);
+    width: 100%;
     border: 0px;
     border-radius: 4px;
     padding: 10px 25px;
-    margin: 10px 10px;
-}
-
-#signin{
-    background:none;
-    border: 0px;
-    border-radius: 4px;
-    padding: 10px 25px;
-    margin: 10px 10px;
+    margin: 10px 0px;
 }
 
 #signin:hover{

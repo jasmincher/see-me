@@ -11,7 +11,7 @@ function Signin() {
   return (
 
 
-    <div>
+    <div className="register-container">
 
       <Row style={{margin: '0', width: '100%'}}>
 
